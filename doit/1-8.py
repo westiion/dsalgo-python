@@ -1,12 +1,18 @@
-# 기본 알고리즘
-sum=0
-n=int(input())
-for i in range(1,n+1):
-    sum+=i
-print(sum)
+# 1부터 n까지 정수 합 구하기(양수만 받기)
+while True:
+    n=int(input("n 입력: "))
+    if n<=0:
+        break
+    total=0
+    for i in range(1,n+1):
+        total+=i
+print(total)
 
 # 가우스 덧셈 
-n=int(input())
-sum=n*(n+1)/2
+while True:
+    n=int(input("n 입력: "))
+    if n<=0:
+        break
+    total=n*(n+1)/2
 
-print(sum)
+print(total)
